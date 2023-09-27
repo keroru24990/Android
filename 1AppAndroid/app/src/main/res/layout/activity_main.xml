@@ -12,6 +12,7 @@
         android:layout_width= "match_parent"
         android:layout_weight="25"
         android:orientation="horizontal"
+        android:background="@drawable/netflix"
         android:layout_height="0px">
 
     </LinearLayout>
@@ -19,16 +20,60 @@
         android:layout_width= "match_parent"
         android:layout_height="0px"
         android:layout_weight="50"
-        android:background="@drawable/netflix"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="80dp"
+        android:weightSum="6"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User:" />
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Escribe el usuario"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Password:" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Escribe tu password" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width= "match_parent"
         android:layout_height="0px"
         android:layout_weight="25"
+        android:paddingLeft="110dp"
+        android:paddingRight="110dp"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btnSingIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Send" />
     </LinearLayout>
 </LinearLayout>
