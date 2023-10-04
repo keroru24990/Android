@@ -90,6 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
+                android:id="@+id/edtEmail"
                 android:drawableEnd="@drawable/done_icon">
             </EditText>
             <View
@@ -109,6 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:id="@+id/edtPassword"
                 android:drawableEnd="@drawable/password_icon">
 
             </EditText>
@@ -149,10 +151,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Login"
-                app:cornerRadius="32dp"></com.google.android.material.button.MaterialButton>
+                app:cornerRadius="32dp"
+                android:id="@+id/btnLogin" />
+
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="10dp"></View>
+                android:layout_height="10dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
