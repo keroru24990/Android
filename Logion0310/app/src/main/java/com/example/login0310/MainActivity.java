@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.login0310.actions.ServicePeliculas;
 import com.example.login0310.actions.ViewPeliculas;
 
@@ -26,22 +27,34 @@ public class MainActivity extends AppCompatActivity
         return mainActivity; //0x457845AF
     }
     /* FIN PATRÓN SINGLETON*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mainActivity = this;
         initComponents();
+
+
     }
     private void initComponents(){
         edtEmail = findViewById(R.id.edtEmail);
         edtPassword = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);
 
+
     }
 
     @Override
     public void showPeliculas(String message) {
         Toast.makeText(mainActivity, message, Toast.LENGTH_SHORT).show();
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Welcome to miami", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
     }
 }
