@@ -1,5 +1,7 @@
 package com.example.login0310.login_user;
 
+import com.example.login0310.lst_peliculas.model.entities.User;
+
 public interface Contract {
     public interface View {
         // Validación de datos
@@ -15,7 +17,7 @@ public interface Contract {
     }
 
     public interface Model{
-        interface  onLoginUserL{
+        interface OnLoginUserL{
             void onFinished(User user);
             void onFailure(String err);
         }
